@@ -11,6 +11,7 @@
   inputs.src-colorizeEcho-main.ref   = "refs/heads/main";
   inputs.src-colorizeEcho-main.owner = "s3pt3mb3r";
   inputs.src-colorizeEcho-main.repo  = "colorizeEcho";
+  inputs.src-colorizeEcho-main.dir   = "";
   inputs.src-colorizeEcho-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
