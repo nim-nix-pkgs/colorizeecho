@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."colorizeecho-main".dir   = "main";
+  inputs."colorizeecho-main".owner = "nim-nix-pkgs";
+  inputs."colorizeecho-main".ref   = "master";
+  inputs."colorizeecho-main".repo  = "colorizeecho";
+  inputs."colorizeecho-main".type  = "github";
+  inputs."colorizeecho-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."colorizeecho-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
