@@ -7,8 +7,37 @@
   "license": "MIT",
   "web": "https://github.com/s3pt3mb3r/colorizeEcho",
   "refs": [
-    "fatal: unable to access 'https://github.com/s3pt3mb3r/colorizeEcho/': SSL connection timeout",
+    "refs/heads/main",
     ""
   ],
-  "heads": []
+  "heads": [
+    {
+      "name": "colorizeEcho",
+      "version": "1.0",
+      "author": "s3pt3mb3r",
+      "desc": "colorizeEcho is a package which colorize echo message on Windows command prompt.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main"
+    }
+  ]
 }
